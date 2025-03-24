@@ -7,7 +7,7 @@ const EventPage = () => {
 
 
     const filteredEvents = eventData.filter(event => event.title === titlePage);
-    const event = filteredEvents[0]; // Исправлено
+    const event = filteredEvents[0];
 
     if (!event) {
         return <div className="error-message">Событие не найдено</div>;
