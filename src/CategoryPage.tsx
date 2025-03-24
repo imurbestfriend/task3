@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const CategoryPage = () => {
-    const category = "IT";  // Пример категории, это можно сделать динамическим, в зависимости от URL
+    const category = "IT";
 
     return (
         <motion.div
@@ -19,7 +19,6 @@ const CategoryPage = () => {
                 <Link to={`/event/Киберспортивный турнир`}>
                     <div className="card">Киберспортивный турнир</div>
                 </Link>
-                {/* Добавьте больше событий, если нужно */}
             </div>
         </motion.div>
     );

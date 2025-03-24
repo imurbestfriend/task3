@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-// Схема валидации для каждого события
+
 const eventSchema = z.object({
     title: z.string(),
     description: z.string(),
@@ -8,10 +8,10 @@ const eventSchema = z.object({
     location: z.string(),
 });
 
-// Тип для TypeScript
+
 export type EventType = z.infer<typeof eventSchema>;
 
-// Массив событий
+
 export const eventData: EventType[] = [
     {
         title: 'IT Конференция 2025',
@@ -33,7 +33,7 @@ export const eventData: EventType[] = [
     }
 ];
 
-// Валидация данных при запуске
+
 eventData.forEach(event => {
     eventSchema.parse(event);
 });

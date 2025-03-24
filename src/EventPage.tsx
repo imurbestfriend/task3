@@ -5,7 +5,7 @@ import { eventData } from './data';
 const EventPage = () => {
     const { titlePage } = useParams<{ titlePage: string }>();
 
-    // Используем filter + [0] вместо find
+
     const filteredEvents = eventData.filter(event => event.title === titlePage);
     const event = filteredEvents[0]; // Исправлено
 
