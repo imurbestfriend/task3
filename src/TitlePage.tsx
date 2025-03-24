@@ -18,7 +18,7 @@ const TitlePage = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <Link to={`/${event.title}`}>{event.title}</Link>
+                        <Link to={`/events/${event.title}`}>{event.title}</Link>
                     </motion.li>
                 ))}
             </ul>

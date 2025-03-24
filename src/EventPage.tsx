@@ -5,9 +5,7 @@ import { eventData } from './data';
 const EventPage = () => {
     const { titlePage } = useParams<{ titlePage: string }>();
 
-
-    const filteredEvents = eventData.filter(event => event.title === titlePage);
-    const event = filteredEvents[0];
+    const event = eventData.find(event => event.title === titlePage);
 
     if (!event) {
         return <div className="error-message">Событие не найдено</div>;
